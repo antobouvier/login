@@ -212,33 +212,39 @@
 	}
 }
 
-@media (max-width: 480px) {
+/* responsive*/
+
+@media (max-width: 768px) {
+	.login {
+		width: 95%;
+		padding: 6vw 5vw;
+		box-shadow: none;
+		backdrop-filter: blur(8px);
+	}
+
 	.heading {
-		font-size: 18px;
+		font-size: 6vw;
+	}
+
+	.input label {
+		font-size: 4vw;
+	}
+
+	.input input {
+		font-size: 5vw;
+		padding: 3vw;
+		width: 100%;
+	}
+
+	.login-btn {
+		font-size: 5vw;
+		padding: 3vw;
+		width: 100%;
+	}
+
+	.logo-fondo {
+		width: 25vw;
+		right: 3vw;
+		bottom: 3vw;
 	}
 }
-
-
-
-html, body {
-	margin: 0;
-	padding: 0;
-	height: 100%;
-}
-
-body {
-	font-family: 'Poppins', sans-serif;
-	overflow: hidden;
-}
-
-.main {
-	height: 100vh; /* Fallback */
-	height: 100dvh; /* Soporte moderno */
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background: url("../imagenes/lobo.jpeg") no-repeat center center;
-	background-size: cover;
-	position: relative;
-}
-
